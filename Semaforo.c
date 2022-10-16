@@ -14,7 +14,7 @@ int leitor_lendo;
 void ler_base_de_dados(void);
 void usar_banco_de_dados(void);
 void pensando_nos_dados(void);
-void escrever_no_bando_de_dados(void);
+void escrever_no_banco_de_dados(void);
 
 void leitor(){
     while(1){
@@ -39,7 +39,7 @@ void escritor(){
     while(1){
         pensando_nos_dados();
         pthread_mutex_lock(&db);
-        escrever_no_bando_de_dados();
+        escrever_no_banco_de_dados();
 
         pthread_mutex_unlock(&db);
     }
